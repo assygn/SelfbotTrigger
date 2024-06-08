@@ -1,0 +1,37 @@
+{
+  "name": "Kills",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-packager . myApp --platform=win32 --arch=x64 --electron-version=18.0.0 --overwrite --asar"
+  },
+  "keywords": [],
+  "author": "rush",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "chalk": "^5.3.0",
+    "colors": "^1.4.0",
+    "discord.js": "^14.15.3",
+    "discord.js-selfbot-v13": "^3.1.4",
+    "dotenv": "^16.4.5",
+    "figlet": "^1.7.0",
+    "fs": "^0.0.1-security",
+    "readline": "^1.3.0",
+    "request-promise-native": "^1.0.9"
+  },
+  "bin": {
+    "myApp": "./index.js"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/**/*",
+      ".env"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  }
+}
